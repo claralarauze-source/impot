@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barème Impôt 2026 — Tranches et Taux d'Imposition | CalcImpôt</title>
+  <meta name="description" content="Barème officiel de l'impôt sur le revenu 2026 : tranches, taux marginaux, quotient familial. Calculez votre impôt gratuitement avec les taux 2026."/>
+  <meta name="keywords" content="barème impôt 2026, tranches imposition 2026, taux marginal impôt, calcul impôt revenu 2026, quotient familial 2026"/>
+  <link rel="canonical" href="https://calcimpot.app/bareme-impot-2026.html"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Barème Impôt 2026 — Tranches et taux d'imposition",
+    "description": "Le barème officiel de l'impôt sur le revenu 2026 avec les tranches et taux marginaux.",
+    "url": "https://calcimpot.app/bareme-impot-2026.html",
+    "publisher": { "@type": "Organization", "name": "CalcImpôt" }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #0f0e0c; --cream: #f5f0e8; --gold: #3d7a4a; --gold-light: #b8d8bf;
+      --rust: #b5451b; --sage: #4a6741; --paper: #faf7f2; --border: #d4c9b5;
+      --shadow: rgba(15,14,12,0.12);
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); min-height: 100vh; }
+    body::before { content: ''; position: fixed; inset: 0; background-image: radial-gradient(ellipse at 20% 20%, rgba(61,122,74,0.07) 0%, transparent 60%); pointer-events: none; z-index: 0; }
+    header { position: relative; z-index: 10; padding: 1.2rem 3rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); background: rgba(245,240,232,0.9); backdrop-filter: blur(10px); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; text-decoration: none; color: var(--ink); }
+    .logo span { color: var(--gold); }
+    .badge { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold-light); padding: 0.3rem 0.8rem; border-radius: 100px; }
+    @media (max-width: 768px) { header { padding: 1rem 1.5rem; } }
+    .breadcrumb { position: relative; z-index: 5; max-width: 860px; margin: 0 auto; padding: 1rem 1.5rem 0; font-size: 0.8rem; color: #8a7f72; }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+    .hero { position: relative; z-index: 5; text-align: center; padding: 3rem 2rem 1.5rem; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.15; margin-bottom: 0.8rem; }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p { font-size: 0.95rem; color: #6b6456; font-weight: 300; max-width: 560px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .update-badge { display: inline-block; background: rgba(74,103,65,0.1); border: 1px solid rgba(74,103,65,0.3); color: var(--sage); font-size: 0.75rem; font-weight: 500; padding: 0.3rem 0.8rem; border-radius: 100px; margin-bottom: 1rem; }
+    .main-content { position: relative; z-index: 5; max-width: 860px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+    .card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 2px 12px var(--shadow); }
+    .card h2 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; padding-bottom: 0.7rem; border-bottom: 1px solid var(--border); }
+    .card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.6rem; }
+    .card p { font-size: 0.95rem; line-height: 1.85; color: #3d3830; margin-bottom: 1rem; }
+    .card p:last-child { margin-bottom: 0; }
+    .bareme-table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.9rem; }
+    .bareme-table th { background: var(--ink); color: var(--cream); padding: 0.8rem 1rem; text-align: left; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .bareme-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); color: #3d3830; }
+    .bareme-table tr:nth-child(even) td { background: rgba(212,201,181,0.15); }
+    .taux-0 { color: var(--sage); font-weight: 700; }
+    .taux-11 { color: #1a6b8a; font-weight: 700; }
+    .taux-30 { color: #c9a84c; font-weight: 700; }
+    .taux-41 { color: var(--rust); font-weight: 700; }
+    .taux-45 { color: #8b1a1a; font-weight: 700; }
+    .tranche-bar { height: 8px; background: var(--border); border-radius: 10px; overflow: hidden; margin-top: 0.4rem; }
+    .tranche-fill { height: 100%; border-radius: 10px; }
+    .highlight-box { background: rgba(61,122,74,0.06); border-left: 3px solid var(--gold); padding: 1rem 1.2rem; margin: 1.2rem 0; border-radius: 0 2px 2px 0; }
+    .highlight-box p { margin-bottom: 0; font-size: 0.9rem; color: #3a5040; }
+    .cta-box { background: var(--ink); color: var(--cream); border-radius: 2px; padding: 2rem; text-align: center; margin: 2rem 0; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .cta-box p { font-size: 0.9rem; color: rgba(245,240,232,0.7); margin-bottom: 1.2rem; }
+    .cta-btn { display: inline-block; background: var(--gold); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.9rem 2rem; border-radius: 2px; text-decoration: none; }
+    .cta-btn:hover { opacity: 0.9; }
+    .example-box { background: white; border: 1px solid var(--border); border-radius: 2px; padding: 1.5rem; margin: 1.2rem 0; }
+    .example-title { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .example-row { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid rgba(212,201,181,0.3); font-size: 0.88rem; }
+    .example-row:last-child { border-bottom: none; font-weight: 600; }
+    .faq-item { border: 1px solid var(--border); border-radius: 2px; margin-bottom: 0.8rem; overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; padding: 1.2rem 1.5rem; text-align: left; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 500; color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .faq-q::after { content: '+'; font-size: 1.3rem; color: var(--gold); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 1.5rem 1.2rem; font-size: 0.9rem; line-height: 1.75; color: #3d3830; border-top: 1px solid var(--border); padding-top: 1rem; }
+    .faq-item.open .faq-a { display: block; }
+    .other-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; }
+    @media (max-width: 600px) { .other-tools { grid-template-columns: 1fr; } }
+    .tool-link { background: white; border: 1px solid var(--border); border-radius: 2px; padding: 1rem; text-decoration: none; color: var(--ink); display: flex; align-items: center; gap: 0.8rem; transition: border-color 0.2s; }
+    .tool-link:hover { border-color: var(--gold); }
+    .tool-icon { font-size: 1.5rem; }
+    .tool-name { font-size: 0.85rem; font-weight: 500; }
+    .tool-desc { font-size: 0.75rem; color: #8a7f72; }
+    footer { position: relative; z-index: 5; background: var(--ink); color: rgba(245,240,232,0.7); padding: 2rem 3rem; text-align: center; font-size: 0.8rem; line-height: 1.8; }
+    footer a { color: var(--gold-light); text-decoration: none; }
+    footer strong { color: var(--cream); }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://calcimpot.app" class="logo">Calc<span>Impôt</span></a>
+  <div class="badge">Barème officiel 2026</div>
+</header>
+
+<div class="breadcrumb">
+  <a href="https://calcimpot.app">CalcImpôt</a> → Barème impôt 2026
+</div>
+
+<div class="hero">
+  <div class="update-badge">✅ Barème officiel — Revenus 2025</div>
+  <h1>Barème impôt<br><em>2026</em> — Tranches et taux</h1>
+  <p>Le barème officiel de l'impôt sur le revenu 2026, applicable aux revenus perçus en 2025. Tranches, taux marginaux et exemples de calcul.</p>
+</div>
+
+<div class="main-content">
+
+  <div class="card">
+    <h2>Barème officiel 2026 (revenus 2025)</h2>
+    <p>L'impôt sur le revenu en France est calculé selon un barème progressif par tranches. Chaque tranche est imposée à son propre taux — seule la fraction du revenu dans cette tranche est taxée à ce taux.</p>
+
+    <table class="bareme-table">
+      <thead><tr><th>Tranche de revenu imposable (par part)</th><th>Taux</th><th>Impôt max sur la tranche</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Jusqu'à 11 497 €</td>
+          <td class="taux-0">0 %</td>
+          <td>0 €</td>
+        </tr>
+        <tr>
+          <td>De 11 497 € à 29 315 €</td>
+          <td class="taux-11">11 %</td>
+          <td>1 960 €</td>
+        </tr>
+        <tr>
+          <td>De 29 315 € à 83 823 €</td>
+          <td class="taux-30">30 %</td>
+          <td>16 352 €</td>
+        </tr>
+        <tr>
+          <td>De 83 823 € à 180 294 €</td>
+          <td class="taux-41">41 %</td>
+          <td>39 557 €</td>
+        </tr>
+        <tr>
+          <td>Au-delà de 180 294 €</td>
+          <td class="taux-45">45 %</td>
+          <td>Illimité</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <p><strong>Important :</strong> Ce barème s'applique au quotient familial (revenu imposable divisé par le nombre de parts fiscales), puis l'impôt obtenu est multiplié par le nombre de parts. Un célibataire a 1 part, un couple 2 parts, + 0,5 par enfant.</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h3>Calculez votre impôt 2026</h3>
+    <p>Entrez vos revenus et votre situation familiale pour obtenir votre impôt exact en quelques secondes.</p>
+    <a href="https://calcimpot.app" class="cta-btn">Calculer mon impôt →</a>
+  </div>
+
+  <div class="card">
+    <h2>Exemple de calcul — Célibataire 35 000 € net imposable</h2>
+    <p>Voici comment calculer l'impôt d'un célibataire avec 35 000€ de revenu net imposable (après abattement de 10%) :</p>
+
+    <div class="example-box">
+      <div class="example-title">Calcul par tranche — 1 part fiscale</div>
+      <div class="example-row">
+        <span>Tranche à 0% (0 → 11 497€)</span>
+        <span style="color:var(--sage)">0 €</span>
+      </div>
+      <div class="example-row">
+        <span>Tranche à 11% (11 497 → 29 315€)</span>
+        <span>1 960 €</span>
+      </div>
+      <div class="example-row">
+        <span>Tranche à 30% (29 315 → 35 000€)</span>
+        <span>1 706 €</span>
+      </div>
+      <div class="example-row">
+        <span style="font-weight:600">Total impôt brut</span>
+        <span style="color:var(--rust)">3 666 €</span>
+      </div>
+      <div class="example-row">
+        <span style="font-weight:600">Taux moyen d'imposition</span>
+        <span>10,5 %</span>
+      </div>
+      <div class="example-row">
+        <span style="font-weight:600">Taux marginal (TMI)</span>
+        <span>30 %</span>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>À retenir :</strong> Le taux marginal (TMI) de 30% ne s'applique pas à l'ensemble du revenu — seulement aux 5 685€ qui dépassent le seuil de 29 315€. C'est pour cette raison que le taux moyen (10,5%) est bien inférieur au TMI (30%).</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Impact du quotient familial</h2>
+    <p>Le quotient familial est le mécanisme qui permet de tenir compte des charges de famille. Le revenu imposable est divisé par le nombre de parts avant application du barème, puis multiplié par ce même nombre.</p>
+
+    <table class="bareme-table">
+      <thead><tr><th>Situation</th><th>Nombre de parts</th><th>Impôt (35 000€)</th><th>Économie vs célibataire</th></tr></thead>
+      <tbody>
+        <tr><td>Célibataire sans enfant</td><td>1</td><td>3 666 €</td><td>—</td></tr>
+        <tr><td>Couple sans enfant</td><td>2</td><td>1 540 €</td><td>- 2 126 €</td></tr>
+        <tr><td>Couple + 1 enfant</td><td>2,5</td><td>770 €</td><td>- 2 896 €</td></tr>
+        <tr><td>Couple + 2 enfants</td><td>3</td><td>0 €</td><td>- 3 666 €</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Le plafonnement du quotient familial</h3>
+    <p>L'avantage fiscal lié au quotient familial est plafonné à 1 791€ par demi-part supplémentaire en 2026. Ce plafonnement s'applique principalement aux foyers à revenus élevés, pour lesquels le gain théorique du quotient dépasserait ce plafond.</p>
+  </div>
+
+  <div class="card">
+    <h2>Principales réductions et crédits d'impôt 2026</h2>
+
+    <table class="bareme-table">
+      <thead><tr><th>Dispositif</th><th>Type</th><th>Taux</th><th>Plafond</th></tr></thead>
+      <tbody>
+        <tr><td>Dons aux associations</td><td>Réduction</td><td>66 %</td><td>20% du revenu imposable</td></tr>
+        <tr><td>Dons urgence humanitaire</td><td>Réduction</td><td>75 %</td><td>1 000 €</td></tr>
+        <tr><td>Emploi à domicile</td><td>Crédit</td><td>50 %</td><td>12 000 € de dépenses</td></tr>
+        <tr><td>Garde enfants -6 ans</td><td>Crédit</td><td>50 %</td><td>3 500 € par enfant</td></tr>
+        <tr><td>Frais de scolarité</td><td>Réduction</td><td>Forfait</td><td>61€/collège, 153€/lycée</td></tr>
+        <tr><td>Souscription capital PME</td><td>Réduction</td><td>18 %</td><td>50 000 € (célibataire)</td></tr>
+        <tr><td>PER (versements)</td><td>Déduction</td><td>TMI</td><td>10% des revenus</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Questions fréquentes sur le barème 2026</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Le barème 2026 a-t-il changé par rapport à 2025 ?</button>
+      <div class="faq-a">Oui, les seuils des tranches sont revalorisés chaque année en fonction de l'inflation. Pour 2026 (revenus 2025), les seuils ont été relevés de 1,8% par rapport au barème 2025, conformément à l'évolution de l'indice des prix à la consommation. Les taux (0%, 11%, 30%, 41%, 45%) restent inchangés.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Comment connaître mon taux marginal d'imposition ?</button>
+      <div class="faq-a">Votre TMI est le taux de la tranche dans laquelle se situe votre dernier euro de revenu imposable (divisé par vos parts fiscales). Par exemple, si votre revenu imposable par part est de 35 000€, vous êtes dans la tranche à 30% (entre 29 315€ et 83 823€). Votre TMI est donc 30%, même si votre taux moyen est bien inférieur. Notre simulateur calcule automatiquement votre TMI.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que le revenu net imposable ?</button>
+      <div class="faq-a">Le revenu net imposable est votre revenu après application d'un abattement forfaitaire de 10% pour frais professionnels (plafonné à 14 426€). Si vous avez des frais réels supérieurs à cet abattement, vous pouvez les déduire à la place. C'est ce montant qui sert de base au calcul de l'impôt selon le barème progressif.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">À partir de quel revenu devient-on imposable en 2026 ?</button>
+      <div class="faq-a">En 2026, le seuil de non-imposition pour un célibataire (1 part) est d'environ 17 000€ de revenu net imposable (soit environ 18 900€ brut annuel après abattement de 10%). En dessous de ce seuil, l'impôt calculé est nul ou inférieur à la décote. Ce seuil varie selon le nombre de parts fiscales du foyer.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Comment optimiser son impôt légalement ?</button>
+      <div class="faq-a">Les principales stratégies d'optimisation fiscale légales sont : les versements sur un Plan Épargne Retraite (PER, déductibles du revenu imposable à hauteur de votre TMI), les dons aux associations (réduction de 66%), l'emploi d'un salarié à domicile (crédit de 50%), les investissements locatifs déficitaires (déficit foncier), et la souscription au capital de PME. La pertinence de chaque stratégie dépend de votre TMI et de votre situation patrimoniale.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Nos autres outils gratuits</h2>
+    <div class="other-tools">
+      <a href="https://calcimpot.app" class="tool-link">
+        <span class="tool-icon">🧾</span>
+        <div><div class="tool-name">CalcImpôt — Simulateur impôt</div><div class="tool-desc">Barème 2026, quotient familial, réductions</div></div>
+      </a>
+      <a href="https://calcsalaire.app" class="tool-link">
+        <span class="tool-icon">💶</span>
+        <div><div class="tool-name">CalcSalaire — Salaire net/brut</div><div class="tool-desc">Convertisseur brut/net, simulateur d'augmentation</div></div>
+      </a>
+      <a href="https://calcimmo.app" class="tool-link">
+        <span class="tool-icon">🏠</span>
+        <div><div class="tool-name">CalcImmo — Crédit immobilier</div><div class="tool-desc">Mensualités, tableau d'amortissement, comparateur</div></div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>CalcImpôt</strong> — Simulateur d'impôt sur le revenu gratuit 2026<br>
+  Les informations présentées sont basées sur le barème officiel 2026. Consultez les services des impôts pour votre situation spécifique.<br>
+  <span style="margin-top:0.5rem;display:inline-block;">
+    <a href="https://calcimpot.app">Simulateur</a> · <a href="#">Mentions légales</a> · <a href="#">Contact</a>
+  </span>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>
